@@ -1,10 +1,8 @@
 ﻿using System;
 namespace CrackingCodeinterView
 {
-    public class LinkedListSolutions
+    public static class LinkedListSolutions
     {
-        public LinkedListSolutions()
-        {
-        }
+        
     }
 }
