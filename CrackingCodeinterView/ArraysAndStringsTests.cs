@@ -1,6 +1,7 @@
 ﻿using System;
 namespace CrackingCodeinterView
 {
+    // 9 Questions
     public static class ArraysAndStringsSolutions
     {
         /// <summary>
@@ -27,5 +28,7 @@ namespace CrackingCodeinterView
 			return true;
 
 		}
+
+
     }
 }

@@ -35,6 +35,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ArraysAndStringsTests.cs" />
+    <Compile Include="LinkedListSolutions.cs" />
+    <Compile Include="StackAndQueuesSolutions.cs" />
+    <Compile Include="TreesAndGraphsQuestions.cs" />
+    <Compile Include="BitManipulaationQuestions.cs" />
+    <Compile Include="MathLogicPuzzles.cs" />
+    <Compile Include="OODesignQs.cs" />
+    <Compile Include="RecursionDP.cs" />
+    <Compile Include="SortingSearching.cs" />
+    <Compile Include="ThreadsAndLocks.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
