@@ -405,5 +405,128 @@ namespace CrackingCodeinterView
 
         #endregion
 
+        #region "Question 7 - Rotate Matrix"
+        public static bool rotate(int[][] matrix)
+        {
+            //first check if matrix is not nxn
+            if (matrix.Length == 0 || matrix.Length != matrix[0].Length)
+                return false;
+
+            int n = matrix.Length;
+
+            for (int layer=0; layer < n/2; layer++)
+            {
+                int first = layer;
+                int last = n - 1 - layer;
+
+                for (int i=first; i<last;i++)
+                {
+                    int offset = i - first;
+                    //Save Top
+                    int top = matrix[first][i];
+
+                    //Left -> Top
+                    matrix[first][i] = matrix[last - offset][first];
+
+                    //Bottom -> Left
+                    matrix[last - offset][first] = matrix[last][last - offset];
+
+                    //Right -> Bottom
+                    matrix[last][last - offset] = matrix[i][last];
+
+                    //Top -> Right
+                    matrix[i][last] = top;
+
+
+                }
+
+            }
+
+            return true;
+
+
+        }
+        #endregion
+
+        #region "Question 8 - Zero Matrix"
+        public static void setZeros(int[][] matrix)
+        {
+            ImprimirMatriz(matrix);
+
+            bool[] row = new bool[matrix.Length];
+            bool[] column = new bool[matrix[0].Length];
+
+            //Recorremos la matriz y guardamos la fila y la columna con valor 0
+            for (int i = 0; i < matrix.Length; i++)
+                for (int j=0; j< matrix[0].Length; j++)
+                {
+                    if (matrix[i][j] == 0)
+                    {
+                        row[i] = true;
+                        column[j] = true;
+                    }
+                }
+
+            //Check Nulls in rows
+            for (int i=0; i< row.Length;i++)
+            {
+                if (row[i])
+                    nullifyRow(matrix, i);
+            }
+
+            //Check Nulls in columns
+            for (int i = 0; i < column.Length; i++)
+            {
+                if (column[i])
+                    nullifyColumn(matrix, i);
+            }
+
+            ImprimirMatriz(matrix);
+
+        }
+
+        private static void ImprimirMatriz(int[][] matrix)
+        {
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[0].Length; j++)
+                    Console.Write(matrix[i][j] + " ");
+
+                Console.WriteLine();
+            }
+                
+        }
+
+        private static void nullifyColumn(int[][] matrix, int column)
+        {
+            for (int i = 0; i < matrix.Length; i++)
+                matrix[i][column] = 0;
+        }
+
+        private static void nullifyRow(int[][] matrix, int row)
+        {
+            for (int j = 0; j < matrix[0].Length; j++)
+                matrix[row][j] = 0;
+        }
+        #endregion
+
+        #region "Question 9 - IsRotation"
+        public static bool isRotation(string s1, string s2)
+        {
+            int len = s1.Length;
+            if (len>0 && len == s2.Length)
+            {
+                string s1s1 = s1 + s1;
+                return isSubstring(s1s1, s2);
+            }
+
+            return false;
+        }
+
+        private static bool isSubstring(string s1s1, string s2)
+        {
+            return s1s1.Contains(s2);
+        }
+        #endregion
     }
 }

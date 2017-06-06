@@ -6,8 +6,10 @@ namespace CrackingCodeinterView
     {
         public static void Main(string[] args)
         {
-            // Arrays And Strings Cracking The Code Interview
+          
 
+            #region "Arrays And Strings Cracking The Code Interview"
+            
             /* 1
 			string strValor = "Aldo";
 
@@ -66,14 +68,48 @@ namespace CrackingCodeinterView
             Console.ReadLine();
             */
 
-            /*6*/
+            /*6
 
             string result = ArraysAndStringsSolutions.compress("aabcccccaaa");
              result = ArraysAndStringsSolutions.compress("abcdd");
             Console.WriteLine(result);
             Console.ReadLine();
 
+            */
+
+            /*7 
+            int[][] matrix = new int[][] { new int[] { 1, 2, 3, 4 }, new int[] { 5, 6, 7, 8 },new int[] { 9, 10, 11, 12 }, new int[] { 13, 14, 15, 16 } };
+            bool result = ArraysAndStringsSolutions.rotate(matrix);
+            if (result)
+                Console.WriteLine("true");
+            else
+                Console.WriteLine("false");
+
+            Console.ReadLine();
+          
+
+            */
+
+            /*8
+            int[][] matrix = new int[][] { new int[] { 1, 2, 0, 4 }, new int[] { 5, 6, 7, 8 }, new int[] { 9, 0, 11, 12 }, new int[] { 13, 14, 15, 16 } };
+            ArraysAndStringsSolutions.setZeros(matrix);
+            Console.ReadLine();
+            */
+
+            /*9*/
+            string s1 = "waterbottle";
+            string s2 = "erbortlewat";
+
+            bool result = ArraysAndStringsSolutions.isRotation(s1,s2);
+            if (result)
+                Console.WriteLine("true");
+            else
+                Console.WriteLine("false");
+
+            Console.ReadLine();
             /**/
+
+            #endregion
 
         }
 
