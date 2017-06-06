@@ -1,0 +1,5 @@
+C:\Users\ALDO\Source\Repos\CrackingCodeTest\CrackingCodeinterView\bin\Debug\CrackingCodeinterView.exe
+C:\Users\ALDO\Source\Repos\CrackingCodeTest\CrackingCodeinterView\bin\Debug\CrackingCodeinterView.pdb
+C:\Users\ALDO\Source\Repos\CrackingCodeTest\CrackingCodeinterView\obj\x86\Debug\CrackingCodeinterView.csprojResolveAssemblyReference.cache
+C:\Users\ALDO\Source\Repos\CrackingCodeTest\CrackingCodeinterView\obj\x86\Debug\CrackingCodeinterView.exe
+C:\Users\ALDO\Source\Repos\CrackingCodeTest\CrackingCodeinterView\obj\x86\Debug\CrackingCodeinterView.pdb
